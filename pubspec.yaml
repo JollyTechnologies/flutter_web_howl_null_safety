@@ -11,7 +11,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  import_js_library: ^1.0.1
+  import_js_library:
+    git: git://https://github.com/JollyTechnologies/flutter_web_import_js_library_null_safety.git
+#    ref: master
   js: ^0.6.0
 
 dev_dependencies:
