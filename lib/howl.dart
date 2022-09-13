@@ -20,9 +20,9 @@ class Howl {
   static const stateLoaded = "loaded";
   static const stateUndefined = "undefined";
 
-  Howl({List<String> src, bool autoPlay = false})
+  Howl({List<String>? src, bool autoPlay = false})
       : _howlJs = HowlJs(HowlParams(
-          src: src,
+          src: src!,
           autoplay: autoPlay,
         ));
 
@@ -44,10 +44,10 @@ class Howl {
     }
   }
 
-  double seek([double seek]) {
+  double seek([double? seek]) {
     final state = this.state();
     if (state == HowlState.loaded) {
-      return _howlJs.seek(seek);
+      return _howlJs.seek(seek!);
     } else {
       return 0;
     }
@@ -57,7 +57,7 @@ class Howl {
 
   bool get playing => _howlJs.playing();
 
-  double volume([double volume]) => _howlJs.volume(volume);
+  double volume([double? volume]) => _howlJs.volume(volume!);
 
   double get duration => _howlJs.duration();
 
