@@ -5,7 +5,7 @@ version: 1.0.0
 homepage: https://github.com/florent37/flutter_web_howl
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: '>=2.12.0-0 <3.0.0'
   flutter: ">=1.10.0"
 
 dependencies:
@@ -14,7 +14,7 @@ dependencies:
   import_js_library:
     path: ../flutter_web_import_js_library_null_safety
 #    ref: master
-  js: ^0.6.0
+  js: ^0.6.3-nullsafety.3
 
 dev_dependencies:
   flutter_test:
