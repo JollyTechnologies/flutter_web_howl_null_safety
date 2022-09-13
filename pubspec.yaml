@@ -12,7 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
   import_js_library:
-    git: git://github.com/JollyTechnologies/flutter_web_import_js_library_null_safety.git
+    path: ../flutter_web_import_js_library_null_safety
 #    ref: master
   js: ^0.6.0
 
